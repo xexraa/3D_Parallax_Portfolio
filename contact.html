@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/portfolio-ico.ico') }}"> -->
+    <script
+      src="https://kit.fontawesome.com/023cc26ed9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="hide">
+      <nav>
+        <img src="img/logo.png" alt="logo" class="logo" />
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="./contact.html" class="active">Contact</a>
+          </li>
+          <li class="hamburger">
+            <a href="#">
+              <div class="bar"></div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="about-page">
+      <div class="about-bg"></div>
+      <div class="contact-div">
+        <div class="content-container">
+          <div class="container">
+            <div class="contact_card">
+              <dl>
+                <div class="contact">
+                  <div>
+                    <img
+                      class="cv_foto"
+                      src="https://picsum.photos/200/300"
+                      alt="CV image"
+                    />
+                  </div>
+                </div>
+                <div class="contact">
+                  <dt>Email:</dt>
+                  <dd class="contact__details">
+                    <a class="contact__link" href=""> random@gmail.com </a>
+                  </dd>
+                </div>
+                <div class="contact">
+                  <dt>GitHub:</dt>
+                  <dd class="contact__details">
+                    <a class="contact__link" href="https://github.com/">
+                      @random
+                    </a>
+                  </dd>
+                </div>
+                <div class="contact">
+                  <dt>Linkedin:</dt>
+                  <dd class="contact__details">
+                    <a class="contact__link" href="https://linkedin.com/">
+                      @Random
+                    </a>
+                  </dd>
+                </div>
+                <div class="contact">
+                  <div class="icon">
+                    <a class="contact__icon" href="https://github.com">
+                      <img
+                        src="/assets/github.svg"
+                        alt="github icon"
+                        class="icon"
+                      />
+                    </a>
+                  </div>
+                  <div class="icon">
+                    <a class="contact__icon" href="">
+                      <img
+                        src="/assets/email.svg"
+                        alt="email icon"
+                        class="icon"
+                      />
+                    </a>
+                  </div>
+                  <div class="icon">
+                    <a class="contact__icon" href="https://linkedin.com/">
+                      <img
+                        src="/assets/linkedin.svg"
+                        alt="linkedin icon"
+                        class="icon"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

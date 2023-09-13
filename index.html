@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AH Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <header class="hide">
+      <nav>
+        <img src="img/logo.png" alt="logo" class="logo" />
+        <ul>
+          <li>
+            <a href="./index.html" class="active">Home</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact</a>
+          </li>
+          <li class="hamburger">
+            <a href="#">
+              <div class="bar"></div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main element -->
+    <main>
+      <div class="vignette hide"></div>
+      <img
+        src="img/background.png"
+        alt="background"
+        class="parallax bg-img"
+        data-speedx="0.008"
+        data-speedy="0.008"
+        data-speedz="0"
+        data-rotation="0"
+        data-distance="0"
+      />
+      <img
+        src="img/right_in_tree.png"
+        alt="tree"
+        class="parallax right-in-tree"
+        data-speedx="0.009"
+        data-speedy="0.008"
+        data-speedz="0.019"
+        data-rotation="0.03"
+        data-distance="0"
+      />
+      <img
+        src="img/left_in_tree.png"
+        alt="tree"
+        class="parallax left-in-tree"
+        data-speedx="0.007"
+        data-speedy="0.006"
+        data-speedz="0.011"
+        data-rotation="0.01"
+        data-distance="0"
+      />
+      <img
+        src="img/right_tree.png"
+        alt="tree"
+        class="parallax right-tree"
+        data-speedx="0.009"
+        data-speedy="0.006"
+        data-speedz="0.04"
+        data-rotation="0.029"
+        data-distance="0"
+      />
+      <img
+        src="img/left_tree.png"
+        alt="tree"
+        class="parallax left-tree"
+        data-speedx="0.007"
+        data-speedy="0.004"
+        data-speedz="0.03"
+        data-rotation="0.02"
+        data-distance="0"
+      />
+      <img
+        src="img/hero_behind.png"
+        alt="tree"
+        class="parallax hero hero-behind"
+        data-speedx="0.01"
+        data-speedy="0.01"
+        data-speedz="0.4"
+        data-rotation="0.5"
+        data-distance="-400"
+      />
+      <img
+        src="img/hero_first.png"
+        alt="tree"
+        class="parallax hero hero-first"
+        data-speedx="0.04"
+        data-speedy="0.03"
+        data-speedz="0.04"
+        data-rotation="0.05"
+        data-distance="-200"
+      />
+
+      <div
+        class="text parallax"
+        data-speedx="0.3"
+        data-speedy="0.1"
+        data-speedz="0"
+        rotation="0.1"
+        data-distance="-200"
+      >
+        <h2>Put your text</h2>
+        <h1>HERE</h1>
+      </div>
+
+      <img src="img/sun_rays.png" alt="sun-rays" class="sun-rays hide" />
+      <img src="img/black_shadow.png" alt="shadow" class="black-shadow hide" />
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

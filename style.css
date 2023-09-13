@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navigation bar */
+.logo {
+  width: 18.75rem;
+}
+
+header {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  padding: 0.9rem 0;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header nav {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+header ul a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.active {
+  position: relative;
+  font-weight: bold;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    transparent 50%,
+    #ff9900 60%,
+    transparent 70%
+  );
+  opacity: 1;
+  z-index: -1;
+}
+
+/* Hamburger icon */
+.hamburger {
+  padding-left: 1.5rem;
+}
+
+.hamburger a {
+  display: flex;
+  padding: 0;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background-color: rgba(115, 115, 115, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger .bar {
+  position: relative;
+  width: 52%;
+  height: 1.3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.hamburger .bar::before,
+.hamburger .bar::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: 2px;
+}
+
+.hamburger .bar::before {
+  top: -4.5px;
+}
+
+.hamburger .bar::after {
+  top: 4.5px;
+}
+
+main {
+  position: relative;
+  background-color: #000;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.parallax {
+  pointer-events: none;
+  transition: none;
+}
+
+.bg-img {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.right-in-tree {
+  position: absolute;
+  width: 143.75rem;
+  left: 16.25rem;
+  z-index: 2;
+}
+
+.left-in-tree {
+  position: absolute;
+  width: 143.75rem;
+  z-index: 3;
+}
+
+.right-tree {
+  position: absolute;
+  width: 143.75rem;
+  left: 16.25rem;
+  z-index: 4;
+}
+
+.left-tree {
+  position: absolute;
+  width: 143.75rem;
+  right: 16.875rem;
+  z-index: 5;
+}
+
+.hero-first {
+  position: absolute;
+  width: 143.75rem;
+  left: 2.875rem;
+  z-index: 6;
+}
+
+.hero-behind {
+  position: absolute;
+  width: 143.75rem;
+  left: 9rem;
+  top: 2.25rem;
+  z-index: 7;
+}
+
+/* REST IMAGES */
+.text {
+  position: absolute;
+  z-index: 9;
+  top: calc(50% - 130px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  pointer-events: auto;
+}
+
+.text h2 {
+  font-weight: 100;
+  font-size: 6.5rem;
+}
+
+.text h1 {
+  font-weight: 800;
+  font-size: 8rem;
+  line-height: 0.88;
+}
+
+.sun-rays {
+  position: absolute;
+  z-index: 19;
+  top: 0;
+  right: 0;
+  width: 93.75rem;
+  pointer-events: none;
+}
+
+.black-shadow {
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.vignette {
+  position: absolute;
+  z-index: 98;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 65%,
+    rgba(0, 0, 0, 0.7)
+  );
+  pointer-events: none;
+}
+
+.contact-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+}
+
+.content-container {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 20px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.contact__details {
+  margin-left: 1ch;
+}
+
+.contact__link {
+  color: #0f4c75;
+  text-decoration: none;
+  box-shadow: 0 3px 0 0 #4cafda;
+}
+
+.contact__icon {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 50px;
+  color: #bbe1fa;
+}
+
+.contact__icon:hover {
+  color: #d7e9f5;
+}
+
+.icon {
+  max-width: 40px;
+  max-height: 40px;
+  margin: 0 15px;
+  margin-top: 1rem;
+}
+
+.contact__link:hover {
+  color: #4cafda;
+}
+
+.u-bare-link {
+  text-decoration: none;
+}
+
+.contact_card {
+  background-color: rgba(210, 180, 140, 0.7);
+  padding: 25px 50px;
+  border-radius: 25px;
+  border: 1px solid #8b4513;
+  border-collapse: collapse;
+}
+
+.cv_foto {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+main.about-page {
+  position: relative;
+  background-color: transparent;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.about-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.content-container {
+  position: absolute;
+  top: 10%; /* Adjust the top position as needed */
+  left: 10%; /* Adjust the left position as needed */
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto; /* Add scrollbars if content exceeds the container */
+}
+
+.container {
+  max-width: 100%; /* Content adjusts automatically to the container width */
+  max-height: 100%; /* Content adjusts automatically to the container height */
+  padding: 20px;
+  /* Add other styling for your content container as needed */
+}
+
+/* Individual columns */
+.column {
+  flex: 1; /* Distribute available space equally among columns */
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.empty-column {
+  flex: 1; /* Distribute available space equally among columns */
+  margin: 20px;
+}
+
+.about-me {
+  width: 30rem;
+}
+
+.hobbies {
+  width: 25rem;
+}
+
+@media (max-width: 1100px) {
+  .text h1 {
+    font-size: 5.8rem;
+  }
+
+  .text h2 {
+    font-size: 4.7rem;
+  }
+}
+
+@media (max-width: 725px) {
+  .text h1 {
+    font-size: 5rem;
+    line-height: 1.1;
+  }
+
+  .text h2 {
+    font-size: 4.1rem;
+    line-height: 1.1;
+  }
+
+  header nav {
+    padding: 0 1rem;
+  }
+
+  .logo {
+    width: 75px;
+  }
+
+  header ul a {
+    font-size: 0.73rem;
+    padding: 0 0.9rem;
+  }
+
+  .hamburger {
+    padding-left: 0.9rem;
+  }
+
+  .hamburger a {
+    height: 30px;
+    width: 30px;
+  }
+
+  .bg-img {
+    width: initial;
+    height: 311.104%;
+  }
+}
+
+@media (max-width: 520px) {
+  .text h1 {
+    font-size: 3.3rem;
+  }
+
+  .text h2 {
+    font-size: 2.6rem;
+  }
+}
