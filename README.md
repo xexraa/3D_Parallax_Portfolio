@@ -2,7 +2,7 @@
 
 Welcome to the README for the 3D Parallax Website!
 
-![parallax-main](https://github.com/xexraa/3D_Parallax_Portfolio/assets/121942715/0e15c5b9-0b7e-4835-9171-56e80957d02a)
+![parallax-main](https://github.com/xexraa/3D_Parallax_Portfolio/assets/121942715/548fb30d-4413-4e30-ade9-675b469ee300)
 
 ## Overview
 
